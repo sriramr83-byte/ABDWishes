@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d20">
+
+<title>Birthday Wishes for Anjana ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #100d20;
+  --panel: rgba(255,255,255,0.065);
+  --gold: #e7c77d;
+  --rose: #e7a6b8;
+  --purple: #a78bfa;
+  --text: #f8f1f5;
+  --muted: #c1b5c9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 15% 15%, #33204c 0%, transparent 42%),
+    radial-gradient(ellipse at 85% 70%, #292044 0%, transparent 45%),
+    var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Floating sparkles */
+
+.sparkle {
+  position: fixed;
+  color: var(--gold);
+  opacity: .5;
+  pointer-events: none;
+  animation: float 7s ease-in-out infinite;
+  z-index: 0;
+}
+
+.sparkle:nth-child(1) {
+  top: 15%;
+  left: 8%;
+  font-size: 24px;
+}
+
+.sparkle:nth-child(2) {
+  top: 40%;
+  right: 10%;
+  font-size: 18px;
+  animation-delay: 2s;
+}
+
+.sparkle:nth-child(3) {
+  top: 75%;
+  left: 12%;
+  font-size: 20px;
+  animation-delay: 3s;
+}
+
+.sparkle:nth-child(4) {
+  top: 85%;
+  right: 15%;
+  font-size: 25px;
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: .25;
+  }
+  50% {
+    transform: translateY(-20px) rotate(20deg);
+    opacity: .8;
+  }
+}
+
+/* Hero */
+
+.hero {
+  min-height: 43vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 65px 22px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-inner {
+  max-width: 720px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.rule {
+  width: 90px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold),
+    transparent
+  );
+  margin: 22px auto;
+}
+
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(42px, 8vw, 68px);
+  font-weight: 500;
+  margin: 15px 0;
+  background: linear-gradient(
+    120deg,
+    #fff4d6,
+    var(--gold),
+    var(--rose)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 570px;
+  margin: auto;
+}
+
+/* Form section */
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  padding: 20px 20px 75px;
+}
+
+.wrap {
+  max-width: 620px;
+  margin: auto;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid rgba(231,199,125,.25);
+  border-radius: 20px;
+  padding: 38px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 20px 65px rgba(0,0,0,.3);
+}
+
+.form-head {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--gold);
+  margin: 15px 0;
+}
+
+.form-head p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+label {
+  display: block;
+  color: var(--rose);
+  font-size: 13px;
+  margin: 22px 0 9px;
+  letter-spacing: .5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 10px;
+  background: rgba(10,8,20,.55);
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: border .2s, box-shadow .2s;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 12px rgba(231,199,125,.12);
+}
+
+input::placeholder, textarea::placeholder {
+  color: #82778c;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  color: #a99fb1;
+  font-size: 11px;
+}
+
+.actions {
+  margin-top: 27px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(110deg, #c9a65d, #f0d99c, #d9a2b7);
+  color: #21152b;
+  font-size: 15px;
+  font-weight: bold;
+  transition: transform .2s, opacity .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.status {
+  min-height: 28px;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--gold);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.privacy {
+  color: #95899f;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 25px 15px 35px;
+  color: #b7a8bd;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 14px;
+}
+
+.heart {
+  color: var(--rose);
+}
+
+@media(max-width:600px) {
+  .hero {
+    min-height: 38vh;
+    padding-top: 55px;
+  }
+
+  .panel {
+    padding: 25px 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="sparkle">✦</div>
+<div class="sparkle">✧</div>
+<div class="sparkle">✦</div>
+<div class="sparkle">✧</div>
+
+<header class="hero">
+  <div class="hero-inner">
+
+    <div class="eyebrow">
+      A little universe made just for Anjana
+    </div>
+
+    <div class="rule"></div>
+
+    <h1>Anjana</h1>
+
+    <p class="subtitle">
+      Every birthday becomes more special because of
+      the people who make life beautiful.
+      Leave Anjana a note she'll love reading. ❤️
+    </p>
+
+    <div class="rule"></div>
+
+    <div class="eyebrow">
+      Friends &nbsp; · &nbsp; Family &nbsp; · &nbsp; Memories
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+<section>
+<div class="wrap">
+
+  <div class="panel">
+
+    <div class="form-head">
+
+      <div class="eyebrow">
+        A note to remember
+      </div>
+
+      <h2>Leave your birthday wish</h2>
+
+      <p>
+        Write from the heart. A favourite memory,
+        a lovely wish, or just a few words.
+        Your message will make her day brighter!
+      </p>
+
+    </div>
+
+    <form id="wishForm">
+
+      <label for="friendName">
+        Your name
+      </label>
+
+      <input
+        id="friendName"
+        name="name"
+        type="text"
+        maxlength="60"
+        placeholder="How should Anjana know it's you?"
+        autocomplete="name"
+        required
+      >
+
+      <label for="friendWish">
+        Your birthday message
+      </label>
+
+      <textarea
+        id="friendWish"
+        name="wish"
+        maxlength="600"
+        placeholder="A lovely wish, a favourite memory, or a few words from the heart..."
+        required
+      ></textarea>
+
+      <div class="form-row">
+        <span>Made with love, just for Anjana ❤️</span>
+        <span id="charCount">0 / 600</span>
+      </div>
+
+      <div class="actions">
+
+        <button
+          class="btn"
+          id="submitBtn"
+          type="submit"
+        >
+          Send birthday wish ♥
+        </button>
+
+      </div>
+
+      <div
+        class="status"
+        id="status"
+        role="status"
+        aria-live="polite"
+      ></div>
+
+      <p class="privacy">
+        Your name and message will be shared on
+        Anjana's private birthday website.
+        Please don't include private or sensitive information.
+      </p>
+
+    </form>
+
+  </div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+  A little message can make a big memory
+  <span class="heart">♥</span>
+</footer>
+
+<script>
+
+// ==========================================
+// GOOGLE SHEETS CONNECTION
+// ==========================================
+
+// Replace this with your deployed Apps Script URL.
+// It should end with /exec.
+
+const WISHES_API_URL =
+  "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+
+// ==========================================
+// FORM ELEMENTS
+// ==========================================
+
+const form = document.getElementById("wishForm");
+const wishBox = document.getElementById("friendWish");
+const nameBox = document.getElementById("friendName");
+const count = document.getElementById("charCount");
+const statusBox = document.getElementById("status");
+const submitBtn = document.getElementById("submitBtn");
+
+
+// Character counter
+
+wishBox.addEventListener("input", () => {
+  count.textContent = `${wishBox.value.length} / 600`;
+});
+
+
+// ==========================================
+// SUBMIT WISH TO GOOGLE SHEETS
+// ==========================================
+
+form.addEventListener("submit", async (event) => {
+
+  event.preventDefault();
+
+  const name = nameBox.value.trim();
+  const wish = wishBox.value.trim();
+
+  if (!name || !wish) {
+    statusBox.textContent =
+      "Please enter both your name and birthday wish ❤️";
+    return;
+  }
+
+  if (
+    WISHES_API_URL.includes(
+      "PASTE_YOUR_GOOGLE_APPS_SCRIPT"
+    )
+  ) {
+    statusBox.textContent =
+      "The wishes page is being prepared. Please try again later.";
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Sending your love...";
+
+  statusBox.textContent = "";
+
+  try {
+
+    const response = await fetch(WISHES_API_URL, {
+
+      method: "POST",
+
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+
+      body: JSON.stringify({
+        name: name,
+        wish: wish
+      })
+
+    });
+
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(
+        result.message || "Submission failed"
+      );
+    }
+
+    form.reset();
+
+    count.textContent = "0 / 600";
+
+    statusBox.textContent =
+      "Your wish has been sent to Anjana! Thank you for adding a little sparkle to her day ❤️";
+
+    statusBox.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest"
+    });
+
+  } catch (error) {
+
+    console.error(error);
+
+    statusBox.textContent =
+      "We couldn't send your wish just now. Please try again in a moment.";
+
+  } finally {
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Send birthday wish ♥";
+
+  }
+
+});
+
+</script>
+
+</body>
+</html>
