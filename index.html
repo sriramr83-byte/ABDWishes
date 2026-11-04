@@ -400,14 +400,14 @@ textarea {
       <textarea
         id="friendWish"
         name="wish"
-        maxlength="2000"
+        maxlength="1000"
         placeholder="A lovely wish, a favourite memory, or a few words from the heart..."
         required
       ></textarea>
 
       <div class="form-row">
         <span>💐💐💐💐💐💐💐</span>
-        <span id="charCount">0 / 600</span>
+        <span id="charCount">0 / 1000</span>
       </div>
 
       <div class="actions">
@@ -477,7 +477,7 @@ const submitBtn = document.getElementById("submitBtn");
 // Character counter
 
 wishBox.addEventListener("input", () => {
-  count.textContent = `${wishBox.value.length} / 600`;
+  count.textContent = `${wishBox.value.length} / 1000`;
 });
 
 
@@ -540,7 +540,7 @@ form.addEventListener("submit", async (event) => {
 
     form.reset();
 
-    count.textContent = "0 / 600";
+    count.textContent = "0 / 1000";
 
     statusBox.textContent =
       "Your wish has been sent to Anjana! Thank you for adding a little sparkle to her day ❤️";
